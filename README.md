@@ -1,9 +1,19 @@
-# Aurora_Resturant
-Semestral work for Markup Languages classes. This is a web page for the Aurora Restaurant. 
-The project is intended to show basic knowledge of HTML, CSS and XML.
-Also the project shows the transformation of XSLT into Json.
+# Aurora Resturant: Website description
+Semestral work for Markup Languages classes. This is a web page for the restaurant named Aurora.   
+
+The project is intended to show basic knowledge of **HTML, CSS and XML**.  
+Also the project shows the transformation of XSLT into Json.  
+All files related to the project are located in the *MarkupP folder*. It consists from:   
+* HTML file
+* CSS file
+* XSL file
+* XSD file
+* XML file
+* Json file
+  
 The project was evaluated and received a score of 60/60.
-Those are the screenshots that shows how the website for Aurora restaurant looks like:
+Those are the screenshots that shows how the website for Aurora restaurant looks like:  
+
 MAIN PAGE:
 ![image](https://github.com/breezevna/Aurora_Resturant/assets/125823447/3c438d28-4472-44b9-a796-372dd2b62533)
 RESERVATION MENU PAGE:
