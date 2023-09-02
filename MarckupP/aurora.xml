@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="auroraJson.xsl" version="2.0"?>
+<Aurora>
+    <name>Aurora</name>
+    <restaurantTab>
+        <location>
+            <address>123 Pricna</address>
+            <city>Prague Newtown</city>
+            <phoneNumber>+420774744744</phoneNumber>
+        </location>
+        <hours>
+            <weekday>
+                <theDay>Monday</theDay>
+                <open>9:00AM</open>
+                <close>10:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Tuesday</theDay>
+                <open>9:00AM</open>
+                <close>10:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Wednesday</theDay>
+                <open>9:00AM</open>
+                <close>10:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Thursday</theDay>
+                <open>9:00AM</open>
+                <close>10:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Friday</theDay>
+                <open>9:00AM</open>
+                <close>11:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Saturday</theDay>
+                <open>9:00AM</open>
+                <close>11:00PM</close>
+            </weekday>
+            <weekday>
+                <theDay>Sunday</theDay>
+                <open>10:00AM</open>
+                <close>9:00PM</close>
+            </weekday>
+        </hours>
+        <payment>
+            <paymentMethod>
+                <type>Credit Card</type>
+                <cardNumber>1234-5678-9012-3456</cardNumber>
+                <expirationDate>05/25</expirationDate>
+                <cvv>123</cvv>
+            </paymentMethod>
+            <paymentMethod>
+                <type>Cash</type>
+                <amount>100$</amount>
+            </paymentMethod>
+        </payment>
+    </restaurantTab>
+    <reservation>
+        <name>Alan</name>
+        <phone>+420 770 098 099</phone>
+        <date>2023-04-15</date>
+        <time>12:30PM</time>
+        <personas>4</personas>
+    </reservation>
+    <menu>
+        <category name="Main Dishes">
+            <item>
+                <name>Margherita</name>
+                <description>Red tomato sauce, white mozzarella and fresh green basil</description>
+                <price>180</price>
+            </item>
+            <item>
+                <name>Marco Polo</name>
+                <description>Tomato, mozzarella, chicken, parmezán</description>
+                <price>250</price>
+            </item>
+            <item>
+                <name>Prosciutto</name>
+                <description>Cooked ham, creamy mozzarella cheese, robust tomato sauce</description>
+                <price>190</price>
+            </item>
+            <item>
+                <name>Steak</name>
+                <description>Grilled steak cooked to your liking</description>
+                <price>350</price>
+            </item>
+            <item>
+                <name>Pasta Carbonara</name>
+                <description>Pasta with a creamy sauce made with eggs, bacon, and parmesan cheese</description>
+                <price>220</price>
+            </item>
+        </category>
+        <category name="Drinks">
+            <item>
+                <name>Soda</name>
+                <description>Your choice of Coke, Pepsi, or Sprite</description>
+                <price>50</price>
+            </item>
+            <item>
+                <name>Beer</name>
+                <description>A cold and refreshing beer</description>
+                <price>47</price>
+            </item>
+            <item>
+                <name>Wine</name>
+                <description>A selection of fine wines from around the world</description>
+                <price>150</price>
+            </item>
+        </category>
+    </menu>
+    <news>
+        <article>
+            <title>We added a NEW BURGER!</title>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien.</description>
+        </article>
+        <article>
+            <title>last year we got a Michelin star</title>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien.</description>
+        </article>
+        <article>
+            <title>Pizza 1+1</title>
+            <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien.</description></article>
+    </news>
+</Aurora>
+

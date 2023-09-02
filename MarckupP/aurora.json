@@ -1,0 +1,159 @@
+
+{
+
+  "location": [
+
+    {
+      "Address": "123 Pricna",
+      "City": "Prague Newtown",
+      "PhoneNumber": "+420774744744"
+    }
+  ],
+
+
+  "workingHours": [
+
+    {
+      "TheDay": "Monday",
+      "Opens": "9:00AM",
+      "Closes": "10:00PM"
+    },
+    {
+      "TheDay": "Tuesday",
+      "Opens": "9:00AM",
+      "Closes": "10:00PM"
+    },
+    {
+      "TheDay": "Wednesday",
+      "Opens": "9:00AM",
+      "Closes": "10:00PM"
+    },
+    {
+      "TheDay": "Thursday",
+      "Opens": "9:00AM",
+      "Closes": "10:00PM"
+    },
+    {
+      "TheDay": "Friday",
+      "Opens": "9:00AM",
+      "Closes": "11:00PM"
+    },
+    {
+      "TheDay": "Saturday",
+      "Opens": "9:00AM",
+      "Closes": "11:00PM"
+    },
+    {
+      "TheDay": "Sunday",
+      "Opens": "10:00AM",
+      "Closes": "9:00PM"
+    }
+  ],
+
+
+  "PaymentMethod": [
+
+    {
+      "Type": "Credit Card",
+      "CardNumber": "1234-5678-9012-3456",
+      "ExpirationDate": "05/25",
+      "CVV": "123",
+      "Amount": ""
+    },
+    {
+      "Type": "Cash",
+      "CardNumber": "",
+      "ExpirationDate": "",
+      "CVV": "",
+      "Amount": "100$"
+    }
+  ],
+
+
+  "restaurantReservation": [
+
+    {
+      "name": "Alan",
+      "phone": "+420 770 098 099",
+      "date": "2023-04-15",
+      "time": "12:30PM",
+      "personas": "4"
+    }
+  ],
+
+
+  "restaurantMenu": {
+    "category": [
+
+      {
+        "name": "Main Dishes",
+        "item": [
+
+          {
+            "name": "Margherita",
+            "description": "Red tomato sauce, white mozzarella and fresh green basil",
+            "price": "180"
+          },
+          {
+            "name": "Marco Polo",
+            "description": "Tomato, mozzarella, chicken, parmezán",
+            "price": "250"
+          },
+          {
+            "name": "Prosciutto",
+            "description": "Cooked ham, creamy mozzarella cheese, robust tomato sauce",
+            "price": "190"
+          },
+          {
+            "name": "Steak",
+            "description": "Grilled steak cooked to your liking",
+            "price": "350"
+          },
+          {
+            "name": "Pasta Carbonara",
+            "description": "Pasta with a creamy sauce made with eggs, bacon, and parmesan cheese",
+            "price": "220"
+          }
+        ]
+      },
+      {
+        "name": "Drinks",
+        "item": [
+
+          {
+            "name": "Soda",
+            "description": "Your choice of Coke, Pepsi, or Sprite",
+            "price": "50"
+          },
+          {
+            "name": "Beer",
+            "description": "A cold and refreshing beer",
+            "price": "47"
+          },
+          {
+            "name": "Wine",
+            "description": "A selection of fine wines from around the world",
+            "price": "150"
+          }
+        ]
+      }
+    ]
+  },
+
+
+  "restaurantNews": [
+
+    {
+      "Title": "last year we got a Michelin star",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien."
+    },
+    {
+      "Title": "Pizza 1+1",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien."
+    },
+    {
+      "Title": "We added a NEW BURGER!",
+      "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel nunc eget ligula eleifend rutrum. Etiam nec est id urna imperdiet ultrices vel nec sapien."
+    }
+  ]
+}

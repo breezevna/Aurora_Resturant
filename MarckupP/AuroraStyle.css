@@ -1,0 +1,235 @@
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    position: absolute;
+    background: transparent;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+h1 {
+    color: white;
+    padding: 10px;
+    font-size: 40px
+}
+nav {
+    margin-left: 40px;
+}
+.links {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.links a {
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+    color: white;
+}
+.links a:hover {
+    color: #FEBF00;
+}
+.wallpaper-image {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    clip-path: inset(0px 0px 200px 0px);
+}
+h2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100px;
+    text-shadow: 1px 1px 3px black;
+    
+}
+.btn {
+    background: #ffffff;
+    padding: 10px 32px;
+    outline: 2.5px solid #FEBF00;
+    outline-offset: 3px;
+    border: 0;
+    color: #FEBF00;
+    font-size: 36px;
+    transition: 0.2s;
+    font-weight: 600;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn:hover, .reserve-btn:hover, .order-btn:hover {
+    outline-offset: 4.5px;
+    background: #FEBF00;
+    color: white;
+}
+.menu-txt {
+    font-size: 35px;
+    font-weight: bold;
+    color: #FEBF00;
+    text-shadow: 1px 1px 1px black;
+    margin: 120px;
+}
+.reservation-img{
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.text{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 35px;
+    border: 20px solid white;
+}
+.reservation-text, .delivery-text{
+    font-size: 50px;
+    color:#FEBF00;
+    text-align: center;
+    padding-top: 50px;
+}
+.text p{
+    font-size: 20px;
+    padding-left: 30px ;
+    text-align:center;
+    margin-top:-25px;
+    margin-bottom: 58px;
+    font-style: oblique;
+}
+.reserve-btn {
+    background: #ffffff;
+    padding: 10px 32px;
+    outline: 2.5px solid #FEBF00;
+    outline-offset: 3px;
+    border: 0;
+    color: #FEBF00;
+    font-size: 36px;
+    transition: 0.2s;
+    font-weight: 600;
+    margin-left:300px
+    
+}
+.delivery-img{
+    width: 40%;
+    float: left;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.text-delivery p{
+    font-size: 20px;
+    text-align:center;
+    margin-top: -25px;
+    font-style: oblique;
+    margin-bottom: 70px;
+}
+.order-btn {
+    background: #ffffff;
+    padding: 10px 32px;
+    outline: 2.5px solid #FEBF00;
+    outline-offset: 3px;
+    border: 0;
+    color: #FEBF00;
+    font-size: 36px;
+    transition: 0.2s;
+    font-weight: bold;
+    margin-left:340px
+}
+.menu {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 90px;
+}
+.menu table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.menu th,
+.menu td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.menu th {
+    background-color: #FEBF00;
+    color: white;
+}
+.menu td:first-child {
+    font-weight: bold;
+}
+.news {
+    background-color: #FEBF00;
+}
+.news h4 {
+    font-size: 50px;
+    margin: 40px;
+    padding-top: 70px;
+}
+.news article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #f7f7f7;
+}
+.news h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.news p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.news a {
+    color: blue;
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.address, .hours {
+    margin-right: 50px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;}
+time {
+    font-style: italic;
+}

@@ -1,0 +1,137 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Aurora">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="name"/>
+                <xs:element name="restaurantTab">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="location">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="address"/>
+                                        <xs:element type="xs:string" name="city"/>
+                                        <xs:element type="xs:long" name="phoneNumber"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="hours">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="weekday" maxOccurs="unbounded" minOccurs="0">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:element type="xs:string" name="theDay"/>
+                                                        <xs:element type="xs:string" name="open"/>
+                                                        <xs:element type="xs:string" name="close"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                            </xs:element>
+                            <xs:element name="payment">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="paymentMethod" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="type">
+                                                        <xs:simpleType><!-- < Restricts payment method by Credit card/Cash > -->
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="Credit Card" />
+                                                                <xs:enumeration value="Cash" />
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                    <xs:element type="xs:string" name="cardNumber" minOccurs="0"/>
+                                                    <xs:element type="xs:string" name="expirationDate" minOccurs="0"/>
+                                                    <xs:element type="xs:byte" name="cvv" minOccurs="0"/>
+                                                    <xs:element type="xs:string" name="amount" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="reservation">
+                    <xs:complexType>
+                        <xs:sequence>
+
+                            <xs:element name="name">
+                                <xs:simpleType>    <!-- < Restricts persons name to be at least 3 letters > -->
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="phone"/>
+                            <xs:element type="xs:date" name="date"/>
+                            <xs:element type="xs:string" name="time"/>
+                            <xs:element name="personas" minOccurs="0">
+                            <xs:simpleType>   <!-- < Restricts personas reservation with at least 1 and max 5 > -->
+                                <xs:restriction base="xs:byte">
+                                    <xs:minInclusive value="1"/>
+                                    <xs:maxInclusive value="5"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="menu">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="category" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="name"/>
+                                                    <xs:element type="xs:string" name="description"/>
+                                                    <xs:element name="price">
+                                                        <xs:simpleType>    <!-- < Restricts menu item, the price of which are higher than 10> -->
+                                                            <xs:restriction base="xs:decimal">
+                                                                <xs:minInclusive value="10"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:string" name="name" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="news">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded" minOccurs="0">
+                            <xs:element name="article">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="title">
+                                            <xs:simpleType>   <!-- < Title has to be at least 5 letters > -->
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element type="xs:string" name="description"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
